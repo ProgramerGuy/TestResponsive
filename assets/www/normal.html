@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>App MI</title>
+<!-- Hojas de Estilo de la aplicacion -->
+            <link rel="stylesheet" href="css/index2.css"> 
+            <link rel="stylesheet" href="components/lungo/lungo.css">
+            <link rel="stylesheet" href="components/lungo/lungo.icon.css">
+            <link rel="stylesheet" href="components/lungo/lungo.icon.brand.css">
+            <link rel="stylesheet" href="components/lungo/theme.lungo.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css" type="text/css">        
+        </head>
+        
+
+<!-- Cuerpo de la aplicacion -->
+        <body onload="Slider();" class = "app" id="contenedor">
+
+            <section id="main_section">
+                <header data-title="Proyecto MI">
+                    <nav>
+                         <a href="#features" data-router="aside" data-icon="menu"></a>
+                     </nav>
+                 </header>
+
+                 <article id="noticias" class="active">
+
+                    <div id="slider_noticias"></div>
+
+                 </article>
+            </section>
+
+<!-- Menu Lateral de la aplicacion -->
+            <aside id="features">
+                <header data-title="Menu" ></header>
+                <article id="main-article" class="active list scroll">
+                    <ul>
+                        <li data-icon="camera" class="thumb"><a href="#"><strong>Vision Aumentada</strong> <small>Ralidad Aumentada</small></a></li>
+                        <li><a href="#"><strong>Sitios de Interes</strong><small>lugares interesantes</small></a></li>
+                        <li><a href="#"><strong>Mapa</strong></a></li>
+                        <li><a href="#"><strong>Noticias</strong></a></li>
+                    </ul>
+                 </article>
+            </aside>
+
+
+
+
+ <!-- Lungo - Dependencies -->
+        <script src="components/quojs/quo.js"></script>
+        <script src="components/lungo/lungo.js"></script>
+        <!-- Lungo - Sandbox App -->
+        <script src="js/lungoact.js"></script>
+
+    <body>
+</html>
