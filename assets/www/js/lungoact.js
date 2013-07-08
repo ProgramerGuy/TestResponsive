@@ -1,0 +1,5 @@
+
+        Lungo.init({
+            name: 'example'
+        });
+
