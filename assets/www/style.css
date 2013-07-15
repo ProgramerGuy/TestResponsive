@@ -267,29 +267,13 @@ a:hover, a:active
 
 }
 
-.Topsidebar
+.Topsidebar, .Middlesidebar, .Bottomsidebar
 {
 	width: 94%;
 	margin: 2% 0 2% 0;
 	padding: 2% 3%;
 }
 
-.Middlesidebar
-{
-	width: 94%;
-	margin: 2% 0 2% 0;
-	padding: 2% 3%;
-
-}
-
-.Bottomsidebar
-{
-	width: 94%;
-	margin: 2% 0 2% 0;
-	padding: 2% 3%;
-
-
-}
 
 
 }

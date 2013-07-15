@@ -1,85 +1,62 @@
-<!DOCTYPE html>
-<html lang="es">	
-<head>
-	<title>Responsive</title>
-	<meta charset"utf-8"/>	
+ç<!DOCTYPE html>
+    <html>
+        <head>
+            <title>App MI</title>
+            <link rel="stylesheet" href="components/lungo/lungo.css">
+            <link rel="stylesheet" href="components/lungo/lungo.icon.css">
+            <link rel="stylesheet" href="components/lungo/lungo.icon.brand.css">
+            <link rel="stylesheet" href="components/lungo/theme.lungo.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="components/quojs/quo.js"></script>
+            <script src="components/lungo/lungo.js"></script>
+            
+        </head>
+    <body>
 
-	<link rel="stylesheet" href="style.css" type="text/css">				
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+         <section id="main" >
 
-<body class="cuerpo">
+            <header data-title="App de Prueba">
 
-	<header class="mainheader">
-		<img src="img/logo1.jpg">
-		<nav>
-			<ul>
-				<li> <a class="active" href="#">Home</a></li>
-				<li> <a href="#">About</a></li>
-				<li> <a href="#">Portafolio</a></li>
-				<li> <a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+                <nav class="right"> 
+                    <a href="#second" data-router="section" data-label="Segunda" data-icon="fire"></a>
+                </nav>
 
-	<div class="ContenidoPrincipal">
-		<div class="contenido">
-			<article class="contenidoTop">
-				<header>
-					<h2><a href="#" tittle="primer_post">Primer post</a></h2>
-				</header>
+                 <nav class="left"> 
+                    <a href="#features" data-router="aside" data-icon="menu"></a>
+                </nav>
 
-				<footer>
-					<p class="infoPost">Este post fue escrito por Raul</p>
-				</footer>
+            </header>
 
-				<content>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-				</content>
-			</article>
+            <article id="main-article" class="active">
+                    <ul class="scroll" style="height: 50%; border: solid 5px">
+                        <img src="http://4.bp.blogspot.com/-7bGwXQIGDrU/UaeOs_-DMhI/AAAAAAAABtU/qyTjqZKDKuE/s640/Titanes_Del_Pac%C3%ADfico_Banner_Latino_i_Cine_1.jpg">
+                        <img src="http://2.bp.blogspot.com/-iQPFo5yt_Nw/UYm5qls7YFI/AAAAAAAAIOk/SKQ3CzjiC-s/s1600/PRGAME1.jpg">
+                    </ul>
 
-			<article class="contenidoBottom">
-				<header>
-					<h2><a href="#" tittle="segundo_post">Segundo post</a></h2>
-				</header>
+                    <ul class="horizontal scroll" style="height: 50%; border: solid 5px">
+                        <img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-ash4/1000994_10151671675898459_656159700_n.jpg">
+                        <img src="http://2.bp.blogspot.com/-iQPFo5yt_Nw/UYm5qls7YFI/AAAAAAAAIOk/SKQ3CzjiC-s/s1600/PRGAME1.jpg">
+                    </ul>
+            </article>
+        </section>
 
-				<footer>
-					<p class="infoPost">Este post fue escrito por Raul</p>
-				</footer>
+        <section id="second" data-transition="slide">
+            <header data-title="Segundo" data-back="home"></header>
+            <article class="active"></article>
+            <footer></footer>
+        </section>
 
-				<content>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-				</content>
-			</article>
-		</div>
-	</div>
+         <aside id="features" data-transition="slide">
+                <header data-title="Menu"></header>
 
-	<aside class="Topsidebar">
-		<article>
-			<h2>Top SideBar</h2>
-			<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
-		</article>
-	</aside>
-	
-	<aside class="Middlesidebar">
-		<article>
-			<h2>Middle SideBar</h2>
-			<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
-		</article>
-	</aside>
-	
-	<aside class="Bottomsidebar">
-		<article>
-			<h2>Bottom SideBar</h2>
-			<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
-		</article>
-	</aside>
+                <article class="list scroll active">
+                    <ul >
+                        <li class="them" data-icon="camera"><strong>Noticias</strong></li>
+                    </ul>
+                </article>
+            </aside>
 
-	<footer class="footerPrincipal">
-		<p>Copy right <a href="#">RedPanda Entertainment Studios </a></p>
-	</footer>
+        <script type="text/javascript"> Lungo.init();</script>
 
-
-
-</body>
+    </body>
 </html>
