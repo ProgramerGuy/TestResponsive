@@ -1,56 +1,62 @@
-<!DOCTYPE html>
+ç<!DOCTYPE html>
     <html>
         <head>
             <title>App MI</title>
-<!-- Hojas de Estilo de la aplicacion -->
-            <link rel="stylesheet" href="css/index2.css"> 
             <link rel="stylesheet" href="components/lungo/lungo.css">
             <link rel="stylesheet" href="components/lungo/lungo.icon.css">
             <link rel="stylesheet" href="components/lungo/lungo.icon.brand.css">
             <link rel="stylesheet" href="components/lungo/theme.lungo.css">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="style.css" type="text/css">        
+            <script src="components/quojs/quo.js"></script>
+            <script src="components/lungo/lungo.js"></script>
+            
         </head>
-        
+    <body>
 
-<!-- Cuerpo de la aplicacion -->
-        <body onload="Slider();" class = "app" id="contenedor">
+         <section id="main" >
 
-            <section id="main_section">
-                <header data-title="Proyecto MI">
-                    <nav>
-                         <a href="#features" data-router="aside" data-icon="menu"></a>
-                     </nav>
-                 </header>
+            <header data-title="App de Prueba">
 
-                 <article id="noticias" class="active">
+                <nav class="right"> 
+                    <a href="#second" data-router="section" data-label="Segunda" data-icon="fire"></a>
+                </nav>
 
-                    <div id="slider_noticias"></div>
+                 <nav class="left"> 
+                    <a href="#features" data-router="aside" data-icon="menu"></a>
+                </nav>
 
-                 </article>
-            </section>
+            </header>
 
-<!-- Menu Lateral de la aplicacion -->
-            <aside id="features">
-                <header data-title="Menu" ></header>
-                <article id="main-article" class="active list scroll">
-                    <ul>
-                        <li data-icon="camera" class="thumb"><a href="#"><strong>Vision Aumentada</strong> <small>Ralidad Aumentada</small></a></li>
-                        <li><a href="#"><strong>Sitios de Interes</strong><small>lugares interesantes</small></a></li>
-                        <li><a href="#"><strong>Mapa</strong></a></li>
-                        <li><a href="#"><strong>Noticias</strong></a></li>
+            <article id="main-article" class="active">
+                    <ul class="scroll" style="height: 50%; border: solid 5px">
+                        <img src="img/im1.jpg">
+                        <img src="img/im2.jpg">
                     </ul>
-                 </article>
+
+                    <ul class="horizontal scroll" style="height: 50%; border: solid 5px">
+                        <img src="img/im3.jpg">
+                        <img src="img/im2.jpg">
+                    </ul>
+            </article>
+        </section>
+
+        <section id="second" data-transition="slide">
+            <header data-title="Segundo" data-back="home"></header>
+            <article class="active"></article>
+            <footer></footer>
+        </section>
+
+         <aside id="features" data-transition="slide">
+                <header data-title="Menu"></header>
+
+                <article class="list scroll active">
+                    <ul >
+                        <li class="them" data-icon="camera"><strong>Noticias</strong></li>
+                    </ul>
+                </article>
             </aside>
 
+        <script type="text/javascript"> Lungo.init();</script>
 
-
-
- <!-- Lungo - Dependencies -->
-        <script src="components/quojs/quo.js"></script>
-        <script src="components/lungo/lungo.js"></script>
-        <!-- Lungo - Sandbox App -->
-        <script src="js/lungoact.js"></script>
-
-    <body>
+    </body>
 </html>
